@@ -6,7 +6,6 @@
     whatsappDefaultMessage: 'Hola IHM, quiero información sobre automatización para mi planta.',
     whatsappCatalogMessage: 'Hola IHM, quiero conocer su catálogo de equipos.',
     instagramUrl: 'https://www.instagram.com/ihmautomatizacion/',
-    mapsQuery: 'IHM Automatizacion Valencia Carabobo',
   };
 
   document.querySelectorAll('[data-whatsapp]').forEach((link) => {
@@ -20,9 +19,6 @@
     link.href = CONFIG.instagramUrl;
   });
 
-  const map = document.querySelector('#contact-map');
-  const mapSource = `https://www.google.com/maps?${new URLSearchParams({ q: CONFIG.mapsQuery, output: 'embed' })}`;
-  if (map.getAttribute('src') !== mapSource) map.src = mapSource;
   document.querySelector('#copyright-year').textContent = new Date().getFullYear();
 
   const header = document.querySelector('.site-header');
@@ -102,7 +98,7 @@
     '.catalog-heading', '.catalog-actions', '.catalog-track > li',
     '.services-heading', '.services-list > li', '.split-heading',
     '.image-pair > figure', '.manufacture-heading', '.manufacture-column',
-    '.about-copy', '.team-images > div', '.contact-copy', '.map-card',
+    '.about-copy', '.team-images > div', '.contact-copy',
   ].join(', '))];
   let revealObserver;
 

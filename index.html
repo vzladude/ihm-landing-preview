@@ -24,11 +24,11 @@
     <meta property="og:url" content="https://vzladude.github.io/ihm-landing-preview/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/styles.css?v=20260912-6">
+    <link rel="stylesheet" href="./css/styles.css?v=20260917-1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&amp;display=swap" rel="stylesheet"></noscript>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <script src="./js/main.js" defer></script>
+    <link rel="icon" href="./favicon.svg?v=20260917-1" type="image/svg+xml">
+    <script src="./js/main.js?v=20260917-1" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -47,18 +47,10 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
-    <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- TODO: replace with official IHM vector logo -->
-      <symbol id="logo" viewBox="0 0 68 34">
-        <text x="0" y="29" fill="currentColor" class="logo-type">ıhm</text>
-        <path d="M4-1h11l-3 7H1z" fill="#2FC4F5"></path>
-      </symbol>
-    </svg>
-
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="#hero" aria-label="IHM Automatización, inicio">
-          <svg class="brand-logo" aria-hidden="true"><use href="#logo"></use></svg>
+          <img class="brand-logo" src="./img/ihm-logo-v2.svg" width="128" height="52" alt="" aria-hidden="true">
         </a>
         <nav class="desktop-nav" aria-label="Navegación principal">
           <a href="#catalogo">Catálogo</a>
@@ -76,7 +68,7 @@
     <dialog class="mobile-menu" id="mobile-menu" aria-label="Menú principal">
       <div class="menu-heading">
         <a class="brand" href="#hero" aria-label="IHM Automatización, inicio">
-          <svg class="brand-logo" aria-hidden="true"><use href="#logo"></use></svg>
+          <img class="brand-logo" src="./img/ihm-logo-light-v2.svg" width="128" height="52" alt="" aria-hidden="true">
         </a>
         <button class="menu-close" type="button" aria-label="Cerrar menú" autofocus><span aria-hidden="true">×</span></button>
       </div>
@@ -146,7 +138,7 @@
             </div>
           </li>
           <li class="equipment-card">
-            <div class="equipment-image equipment-image-contain"><img src="./img/control-horizontal-v2.webp" width="1600" height="1000" alt="Pantalla HMI integrada en el gabinete de acero inoxidable de una máquina industrial" loading="lazy" decoding="async"></div>
+            <div class="equipment-image equipment-image-contain"><img src="./img/tablero-electrico-v3.webp" width="574" height="1020" alt="Tablero eléctrico abierto con cableado, protecciones y componentes de control industrial" loading="lazy" decoding="async"></div>
             <div class="equipment-copy">
               <p class="equipment-number">03</p>
               <h3>Tableros de control con HMI</h3>
@@ -250,23 +242,24 @@
       </section>
       <section class="contact container" id="contacto" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <p class="eyebrow">Contacto y ubicación</p>
-          <h2 id="contact-title">Hablemos de <strong>tu planta.</strong></h2>
-          <address class="contact-details">
-            <span>Valencia, Carabobo, Venezuela</span>
-            <a data-whatsapp="default" href="https://wa.me/584144991238?text=Hola%20IHM%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20planta." target="_blank" rel="noopener">WhatsApp +58 414-499-1238</a>
-            <a data-instagram href="https://www.instagram.com/ihmautomatizacion/" target="_blank" rel="noopener">Instagram @ihmautomatizacion</a>
-          </address>
-          <a class="button contact-button" data-whatsapp="default" href="https://wa.me/584144991238?text=Hola%20IHM%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20planta." target="_blank" rel="noopener"><span class="contact-dot" aria-hidden="true"></span>Escríbenos por WhatsApp</a>
-        </div>
-        <div class="map-card">
-          <iframe id="contact-map" src="https://www.google.com/maps?q=IHM+Automatizacion+Valencia+Carabobo&amp;output=embed" width="584" height="400" loading="lazy" title="Ubicación de IHM Automatización" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact-heading">
+            <p class="eyebrow">Contacto y ubicación</p>
+            <h2 id="contact-title">Hablemos de <strong>tu planta.</strong></h2>
+          </div>
+          <div class="contact-actions">
+            <address class="contact-details">
+              <span>Valencia, Carabobo, Venezuela</span>
+              <a data-whatsapp="default" href="https://wa.me/584144991238?text=Hola%20IHM%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20planta." target="_blank" rel="noopener">WhatsApp +58 414-499-1238</a>
+              <a data-instagram href="https://www.instagram.com/ihmautomatizacion/" target="_blank" rel="noopener">Instagram @ihmautomatizacion</a>
+            </address>
+            <a class="button contact-button" data-whatsapp="default" href="https://wa.me/584144991238?text=Hola%20IHM%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20planta." target="_blank" rel="noopener"><span class="contact-dot" aria-hidden="true"></span>Escríbenos por WhatsApp</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <a class="brand" href="#hero" aria-label="IHM Automatización, inicio">
-        <svg class="brand-logo" aria-hidden="true"><use href="#logo"></use></svg>
+        <img class="brand-logo" src="./img/ihm-logo-v2.svg" width="128" height="52" alt="" aria-hidden="true">
       </a>
       <nav class="footer-nav" aria-label="Navegación del pie de página">
         <a href="#catalogo">Catálogo</a>
